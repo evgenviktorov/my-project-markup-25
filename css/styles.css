@@ -125,11 +125,171 @@ img {
 @media only screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
-    padding: 50px 65px;
+    padding: 50px 64.5px;
   }
 }
 
 /* ---------------- Header ---------------- */
+
+.header {
+  background-color: #fbfbfb;
+  border-bottom: 1px solid rgba(12, 12, 12, 0.1);
+  min-width: 320px;
+  position: sticky;
+  top: 0;
+}
+
+.header-container {
+  padding: 0 20px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.header-logo {
+  padding: 27.5px 0;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+}
+
+.nav-menu-list {
+  display: none;
+}
+
+.nav-social-menu-list {
+  display: none;
+}
+
+.menu-mob-btn {
+  padding: 0;
+  background-color: transparent;
+  stroke: #0c0c0c;
+  border: none;
+  line-height: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+  .header-container {
+    padding: 0px 32px;
+  }
+
+  .header-logo {
+    padding: 34.5px 0;
+    font-size: 20px;
+  }
+
+  .burger-icons {
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+  .menu-mob-btn {
+    display: none;
+  }
+
+  .header-container {
+    padding: 0px 64.5px;
+  }
+
+  .header-logo {
+    padding: 32.5px 0;
+    font-size: 20px;
+  }
+
+  .nav-menu-list {
+    display: flex;
+    gap: 40px;
+
+    padding: 30px 0;
+  }
+
+  .nav-menu-item {
+    height: 28px;
+  }
+
+  .nav-menu-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    color: #0c0c0c;
+    padding-bottom: 10px;
+    position: relative;
+  }
+
+  .nav-menu-link:hover,
+  .nav-menu-link:focus {}
+
+  .nav-menu-link::after {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #3350e9;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(.4, 0, .2, 1);
+  }
+
+  .nav-menu-link:hover:after,
+  .nav-menu-link:focus:after {
+    opacity: 1
+  }
+
+  .nav-social-menu-list {
+    display: flex;
+    gap: 10px;
+
+  }
+
+  .nav-social-menu-item {
+    padding: 26px 0;
+  }
+
+  .nav-social-menu-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(12, 12, 12, 0.1);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 8px;
+    width: 36px;
+    height: 36px;
+    line-height: 0;
+    background-color: transparent;
+    fill: #0c0c0c;
+    transition: border-color 250ms cubic-bezier(.4, 0, .2, 1), fill 250ms cubic-bezier(.4, 0, .2, 1);
+  }
+
+  .social-icons {
+    padding: 0;
+
+  }
+
+  .nav-social-menu-link:hover,
+  .nav-social-menu-link:focus {
+    fill: #3350e9;
+    border: 1px solid rgba(51, 80, 233, 0.1);
+  }
+
+}
+
+
 
 /* ---------------- Hero ---------------- */
 

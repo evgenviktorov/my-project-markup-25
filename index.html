@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>whatchcharm</title>
+    <title>watchcharm</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -16,20 +16,76 @@
   </head>
   <body>
     <!-- ---------------- Header ---------------- -->
-    <header class="header"><div class="container">Header</div></header>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="nav-menu">
+          <a href="" class="header-logo">watchcharm</a>
+          <ul class="nav-menu-list">
+            <li class="nav-menu-item">
+              <a href="#hero" class="nav-menu-link">Home</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#about-us" class="nav-menu-link">About Us</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#catalog" class="nav-menu-link">Catalog</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#sale" class="nav-menu-link">Sale</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#reviews" class="nav-menu-link">Reviews</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#contact-us" class="nav-menu-link">Contact Us</a>
+            </li>
+          </ul>
+          <ul class="nav-social-menu-list">
+            <li class="nav-social-menu-item">
+              <a href="" target="_blank" class="nav-social-menu-link">
+                <svg class="social-icons" width="20" height="20">
+                  <use href="./img/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-social-menu-item">
+              <a href="" target="_blank" class="nav-social-menu-link">
+                <svg class="social-icons" width="20" height="20">
+                  <use href="./img/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-social-menu-item">
+              <a href="" target="_blank" class="nav-social-menu-link">
+                <svg class="social-icons" width="20" height="20">
+                  <use href="./img/icons.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="menu-mob-btn">
+            <svg class="burger-icons" width="34" height="34">
+              <use href="./img/icons.svg#menu"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
 
     <!-- ---------------- Main ---------------- -->
     <main>
       <!-- ---------------- Hero ---------------- -->
-      <section class="hero"><div class="container">Hero</div></section>
+      <section class="hero" id="home">
+        <div class="container hero-container">Hero</div>
+      </section>
 
       <!-- ---------------- About Us ---------------- -->
-      <section class="about-us visually-hidden">
+      <section class="about-us visually-hidden" id="about-us">
         <div class="container">About us</div>
       </section>
 
       <!-- ---------------- Catalog ---------------- -->
-      <section class="catalog visually-hidden">
+      <section class="catalog visually-hidden" id="catalog">
         <div class="container">Catalog</div>
       </section>
 
@@ -39,17 +95,17 @@
       </section>
 
       <!-- ---------------- Sale ---------------- -->
-      <section class="sale visually-hidden">
+      <section class="sale visually-hidden" id="sale">
         <div class="container">Sale</div>
       </section>
 
       <!-- ---------------- Reviews ---------------- -->
-      <section class="reviews visually-hidden">
+      <section class="reviews visually-hidden" id="reviews">
         <div class="container">Reviews</div>
       </section>
 
       <!-- ---------------- Contact us ---------------- -->
-      <section class="contact-us visually-hidden">
+      <section class="contact-us visually-hidden" id="contact-us">
         <div class="container">Contact us</div>
       </section>
     </main>
